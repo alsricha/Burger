@@ -15,7 +15,7 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-var burger = require('./controllers/burgersController.js')
+var burger = require('./controllers/burgers_controller.js')
 
 //Created a simple router with express router from the burgersControllers.js script
 app.use('/', burger)

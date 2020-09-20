@@ -22,9 +22,14 @@ router.post("/burger/create", function (req, res) {
     });
   });
 
-  //Devour a Burger
-  router.post("/burger/eat", function (req, res){
-      burger.updateOne(req.body.id, function(){
+//Devour a Burger
+router.post("/burger/eat", function (req, res){
+    burger.updateOne(req.body.id, function(){
+        res.redirect("/");
+    });
+  });
+  router.post("/burger/restore", function (req, res){
+      burger.restoreOne(reg.body.id, function(){
           res.redirect("/");
       });
   });

@@ -8,10 +8,11 @@ connection = mysql.createConnection(process.env.JAWSDB_URL);
 
 } else {
 	connection = mysql.createConnection({
-		host     : 'localhost',
-	  	user     : 'root',
-	  	password : 'Triwest!4',
-	  	database : 'burgers_db'
+		host:	'localhost',
+		port:	3306,
+	  	user:	'root',
+	  	password:	'Triwest!4',
+	  	database :	'burgers_db'
 	});
 };
 

@@ -2,9 +2,6 @@
 
 var connection = require("../config/connection.js");
 
-// Helper function for SQL syntax.
-// The above helper function loops through and creates an array of question marks - ["?", "?", "?"] - and turns it into a string.
-// ["?", "?", "?"].toString() => "?,?,?";
 var orm = {
 	selectAll: function( tablename,cb){
 
@@ -30,7 +27,6 @@ var orm = {
 		});
 	},
 };
-
 
 
 // Export the ORM object 

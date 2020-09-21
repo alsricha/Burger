@@ -27,8 +27,7 @@ router.post("/", function(req, res) {
   });
 });
 
-// Mark burger as devoured in database.
-// Refresh page to move it to devoured list.
+// Mark burger as devoured and move it to devoured list.
 router.put("/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
